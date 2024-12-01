@@ -1,25 +1,10 @@
 fn main() {
-    let A:i32 = 10;
-    let B:i32 = 20;
+    
+    let arr:[i32;4] = [10,20,30,40];
+    println!("array is {:?}", arr);
+    println!("array size is :{}", arr.len());
 
-    println!("Value of A : {}", A);
-    println!("Value of B : {}", B);
-
-    let mut res = A>B;
-    println!("A greater than B: {}", res);
-
-    res = A<B;
-    println!("A lesser than B: {}", res);
-
-    res = A>=B;
-    println!("A greater than or equal to B: {}", res);
-
-    res = A<=B;
-    println!("A lessser than or equal to B: {}", res);
-
-    res = A==B;
-    println!("A is equal to B: {}", res);
-
-    res = A!=B;
-    println!("A not equal to B: {}", res);
+    for val in arr.iter(){
+        println!("value is :{}", val);
+    }
 }
